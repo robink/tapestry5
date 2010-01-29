@@ -697,6 +697,9 @@ Element.addMethods([
 
 /** Container of functions that may be invoked by the Tapestry.init() function. */
 Tapestry.Initializer = {
+	activate: function(element){
+        $(element).activate();
+    },
 
     ajaxFormLoop : function(spec)
     {

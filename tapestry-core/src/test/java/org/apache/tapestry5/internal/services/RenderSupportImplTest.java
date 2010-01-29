@@ -277,7 +277,7 @@ public class RenderSupportImplTest extends InternalBaseTestCase
     {
         DocumentLinker linker = mockDocumentLinker();
 
-        linker.addScript("$('foo').activate();");
+        linker.addScript("Tapestry.init({\"activate\":[\"foo\"]});");
 
         replay();
 
@@ -295,7 +295,7 @@ public class RenderSupportImplTest extends InternalBaseTestCase
     {
         DocumentLinker linker = mockDocumentLinker();
 
-        linker.addScript("$('foo').activate();");
+        linker.addScript("Tapestry.init({\"activate\":[\"foo\"]});");
 
         replay();
 
@@ -314,7 +314,7 @@ public class RenderSupportImplTest extends InternalBaseTestCase
     {
         DocumentLinker linker = mockDocumentLinker();
 
-        linker.addScript("$('bar').activate();");
+        linker.addScript("Tapestry.init({\"activate\":[\"bar\"]});");
 
         replay();
 

@@ -212,7 +212,7 @@ public class RenderSupportImpl implements RenderSupport
     {
         if (focusFieldId != null)
         {
-            addScript("$('%s').activate();", focusFieldId);
+            addInitFunctionInvocation("activate", focusFieldId);
         }
 
         if (init.length() > 0)
